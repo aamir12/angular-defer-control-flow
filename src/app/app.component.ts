@@ -146,6 +146,111 @@ import { PlaceholderComponent } from './components/placeholder/placeholder.compo
         } @loading (minimum 500ms) {
         <app-placeholder [loading]="true" />
         }
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <h1 #click1>Click me to load video</h1>
+        @defer (on interaction(click1)) {
+          <app-video id="sitHfnoeT88" />
+        }@placeholder {
+        <app-placeholder />
+        }
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <h1 #click2>Hover me to load video</h1>
+        @defer (on hover(click2)) {
+          <app-video id="sitHfnoeT88" />
+        }@placeholder {
+        <app-placeholder />
+        }
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
+          mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
+          nunc sodales non. Duis dictum eros vitae tortor consectetur fermentum.
+          Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
+          orci sollicitudin aliquam gravida.
+        </p>
+        <h1 #click3>ViewPort</h1>
+        @defer (on viewport(click3)) {
+          <app-video id="sitHfnoeT88" />
+        }@placeholder {
+        <app-placeholder />
+        }
+
       </section>
     </div>
   `,
