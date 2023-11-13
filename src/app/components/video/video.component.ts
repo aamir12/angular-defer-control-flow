@@ -18,9 +18,15 @@ import { YoutubeService } from '../../services/youtube.service';
   `,
   styles: `
     :host {
-      display: block;
+      display: flex;
       height: 400px;
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%;
     }
+
+    
   `,
 })
 export class VideoComponent {

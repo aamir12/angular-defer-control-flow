@@ -60,13 +60,57 @@ import { PlaceholderComponent } from './components/placeholder/placeholder.compo
           Vestibulum venenatis ornare felis vulputate varius. Aliquam aliquet
           orci sollicitudin aliquam gravida.
         </p>
+
+        <!-- Idle trigger: when browser is in idle condition -->
+        <!--
+          @defer(on viewport) {
+           <app-video id="sitHfnoeT88" />
+          }
+        -->
+
+        <!-- Viewport trigger: it requires @placeholder, We can also specify minimum option 
+        for both @placeholder and @loading(optional) block -->
         @defer(on viewport) {
         <app-video id="sitHfnoeT88" />
         } @placeholder {
         <app-placeholder />
         } @loading(minimum 500ms) {
         <app-placeholder [loading]="true" />
-        }
+        } 
+
+        <!-- timer trigger: wait till time finish -->
+        <!-- @defer(on timer(5s)) {
+        <app-video id="sitHfnoeT88" />
+        } @placeholder {
+        <app-placeholder />
+        } -->
+
+        <!-- We can also combine trigger; it is or condition. Which one condition trigger first it will 
+        load the content -->
+        <!-- @defer(on viewport; on timer(5s)) {
+        <app-video id="sitHfnoeT88" />
+        } @placeholder {
+        <app-placeholder />
+        } -->
+
+        <!-- hover trigger: it will not load until we hover on placeholder -->
+        <!-- @defer(on hover) {
+        <app-video id="sitHfnoeT88" />
+        } @placeholder {
+        <app-placeholder />
+        } -->
+        <!-- interaction trigger: it will not load until we click on placeholder -->
+        <!-- @defer(on interaction) {
+        <app-video id="sitHfnoeT88" />
+        } @placeholder {
+        <app-placeholder />
+        } -->
+        <!-- Prefetch; it will prefetch all the files on hover/timer/viewport. and it will load only on click  -->
+        <!-- @defer(on interaction; prefetch on hover) {
+        <app-video id="sitHfnoeT88" />
+        } @placeholder {
+        <app-placeholder />
+        } -->
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae
           mollis arcu, et rhoncus est. Morbi pulvinar mauris risus, ac rutrum
